@@ -25,8 +25,7 @@ for x in h:
         count = count+1
 
 
-lx = [0 for i in range(len(zum)*6)]
-ly = [0 for i in range(len(zum)*6)]
+
 first_x = 0
 first_y = 30
 y = 300
