@@ -23,8 +23,8 @@ for x in h:
         q = w[0]
         zum[count] = q
         count = count+1
-
-
+ls = [0 for i in range(len(zum)*6)]
+ly = [0 for i in range(len(zum)*6)]
 
 first_x = 0
 first_y = 30
