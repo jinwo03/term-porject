@@ -1,17 +1,22 @@
+#These are modules for code.
 import pytesseract
 import cv2 
 import matplotlib.pyplot as plt
 from jamo import h2j, j2hcj
 import hbcvt
 
+#read image file
 img_path = "gall2.png"
 image = cv2.imread(img_path)
 rgb_image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
+#extract letters in image
 text = pytesseract.image_to_string(rgb_image, lang='kor+eng')
 
+#disunite vowels and consonants 
 jamo_str = j2hcj(h2j(text))
 
+#translate into braille. It starts from top right to bottom left
 zum = [[0 for col in range(len(jamo_str))] for row in range(len(jamo_str))]
 count = 0
 h = hbcvt.h2b.text(text)
@@ -23,6 +28,8 @@ for x in h:
         q = w[0]
         zum[count] = q
         count = count+1
+
+#write dots with braille code translated
 ls = [0 for i in range(len(zum)*6)]
 ly = [0 for i in range(len(zum)*6)]
 
@@ -55,3 +62,4 @@ plt.axis('off')
 plt.show()
 cv2.waitKey()
 cv2.destroyAllWindows()
+
