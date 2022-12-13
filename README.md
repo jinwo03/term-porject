@@ -50,5 +50,5 @@ and put 1 if there are dots in the list and 0 if there are no dots :
 
 Draw a dot based on the list:
 
-![result](https://user-images.githubusercontent.com/108784781/207130841-de5fa96b-09ae-4318-ada5-dd82780cd101.png)
+![result](https://user-images.githubusercontent.com/108784781/207268715-c0ec1079-f999-48db-90ab-a784d1cf8dff.png)
 
