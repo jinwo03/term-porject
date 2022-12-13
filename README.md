@@ -24,6 +24,8 @@ Image :
 
 ![gall2](https://user-images.githubusercontent.com/108784781/207126506-939635a9-bbc4-44ad-a2e4-1777b03c0aff.png)
 
+You must change the location of important files to the location of your own files
+
 Extract the letters from the image:
 
 타인을 아는 사람은 지혜롭지만
